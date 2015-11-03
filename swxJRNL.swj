@@ -23,10 +23,13 @@ Set myModelView = Part.ActiveView
 myModelView.FrameState = swWindowState_e.swWindowMaximized
 Set myModelView = Part.ActiveView
 myModelView.FrameState = swWindowState_e.swWindowMaximized
-boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.021514823684469775, 0.030149380284967719, 0.020684786944570988, True, 1, Nothing, 0)
-boolstatus = Part.Extension.SelectByID2("Unknown", "POINTREF", 0.014454440504696481, 0.073511030932467802, -0.0019270063614454289, True, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", -0.011935344959340455, 0.071249551836729097, -0.0010701640632078124, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.0033517263530598029, 0.059465440055703311, 0.031552049357799206, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", -0.0044088357134342004, 0.06290032400158907, 0.024149717045304442, True, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.0051621187203068075, 0.054713958001400442, 0.029139310546838715, True, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", -0.016516873183036296, 0.071599725314513307, -0.00098713291049534746, True, 1, Nothing, 0)
 Dim myMate As Object
-Set myMate = Part.AddMate5(0, -1, False, 0.025399999999999999, 0.025399999999999999, 0.025399999999999999, 0.025399999999999999, 0.025399999999999999, 0.52359877559830004, 0.52359877559830004, 0.52359877559830004, False, False, 0, longstatus)
+Set myMate = Part.AddMate5(4, 1, False, 0.025399999999999999, 0, 0, 0.025399999999999999, 0.025399999999999999, 0.52359877559830004, 0.52359877559830004, 0.52359877559830004, False, False, 0, longstatus)
 Part.ClearSelection2 True
 Part.EditRebuild3
 
