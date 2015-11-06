@@ -1,5 +1,5 @@
 ' ******************************************************************************
-' swxJRNL.swj - journal recorded on 11/03/15 by kmckinse
+' swxJRNL.swj - journal recorded on 11/06/15 by kmckinse
 ' *****************************************************************************
 Dim swApp As Object
 
@@ -12,7 +12,7 @@ Sub main()
 Set swApp = _
 Application.SldWorks
 
-swApp.ActivateDoc2 "Raptor Reloaded Left Palm v24", False, longstatus
+swApp.ActivateDoc2 "Raptor Reloaded Full Assembly", False, longstatus
 Set Part = swApp.ActiveDoc
 Set Part = swApp.ActiveDoc
 Dim myModelView As Object
@@ -23,17 +23,174 @@ Set myModelView = Part.ActiveView
 myModelView.FrameState = swWindowState_e.swWindowMaximized
 Set myModelView = Part.ActiveView
 myModelView.FrameState = swWindowState_e.swWindowMaximized
-boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.021514823684469775, 0.030149380284967719, 0.020684786944570988, True, 1, Nothing, 0)
-boolstatus = Part.Extension.SelectByID2("Unknown", "POINTREF", 0.014454440504696481, 0.073511030932467802, -0.0019270063614454289, True, 1, Nothing, 0)
-Dim myMate As Object
-Set myMate = Part.AddMate5(0, -1, False, 0.025399999999999999, 0.025399999999999999, 0.025399999999999999, 0.025399999999999999, 0.025399999999999999, 0.52359877559830004, 0.52359877559830004, 0.52359877559830004, False, False, 0, longstatus)
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+boolstatus = Part.Extension.SelectByID2("", "VERTEX", -0.025406071489356832, -0.0016381593401383595, 0.033686683634310557, False, 0, Nothing, 0)
+Part.TranslateComponent
+Part.RotateComponent
 Part.ClearSelection2 True
-Part.EditRebuild3
-
+boolstatus = Part.Extension.SelectByID2("", "VERTEX", -0.025406071489356832, -0.0016381593401383595, 0.033686683634310557, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.0043654500470609037, 0.05108034175053433, 0.022907896709341458, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.0043654500470609037, 0.05108034175053433, 0.022907896709341458, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.030709004298209663, 0.055331566366504603, -0.0042635324759316973, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("Unknown", "POINTREF", 0.010056686269209438, -0.00051291779089522593, -0.0081125081027403657, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.015727051645377799, 0.046716036670190419, 0.017387917871815262, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.015727051645377799, 0.046716036670190419, 0.017387917871815262, False, 0, Nothing, 0)
+Part.RotateComponent
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateplusx
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewZoomtofit2
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.TranslateComponent
+Part.ViewZoomTo2 1.4299719428879576, 0.13132131673151348, 0.83489857886917329, 1.4934804482913802, 0.036953044617977299, 0.83489857886917396
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateminusx
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000")
+boolstatus = Part.Extension.SketchBoxSelect("0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000")
+boolstatus = Part.Extension.SketchBoxSelect("0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000")
+boolstatus = Part.Extension.SketchBoxSelect("0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000")
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000")
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000")
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000")
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000")
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000")
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusy
 ' MSGBOX
-' Save changes to Raptor Reloaded Left Palm v24?
+' Save changes to Raptor Reloaded Full Assembly?
 
-Set myModelView = Part.ActiveView
-myModelView.FrameState = swWindowState_e.swWindowMaximized
 swApp.ExitApp
 End Sub
